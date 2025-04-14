@@ -15,7 +15,7 @@ TEXT_COLOR = (0, 255, 170)
 font = pygame.font.Font(None, 72)
 text = "Адик пидр айй"
 
-image = pygame.image.load("photo_2025-03-13_03-27-20 (2).jpg") 
+image = pygame.image.load("mymy/photo_2025-03-13_03-27-20 (2).jpg") 
 image = pygame.transform.scale(image, (300, 300))  
 
 

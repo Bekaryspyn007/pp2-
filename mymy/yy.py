@@ -4,7 +4,7 @@ import pygame
 pygame.init()
 
 # Параметры окна
-WIDTH, HEIGHT = 800, 600
+WIDTH, HEIGHT = 1800, 900
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Шарик и Квадрат")
 
@@ -16,6 +16,7 @@ circle_speed = 5  # Скорость шарика
 square_x, square_y = 200, 200  # Начальная позиция квадрата
 square_size = 40  # Размер квадрата
 square_speed = 5  # Скорость квадрата
+player = pygame.image.load("lab8/racer/Enemy.png")
 
 # Основной цикл игры
 running = True
@@ -62,6 +63,7 @@ while running:
     # Рисуем объекты
     pygame.draw.circle(screen, (0, 0, 255), (circle_x, circle_y), circle_radius)  # Синий шарик
     pygame.draw.rect(screen, (255, 0, 0), (square_x, square_y, square_size, square_size))  # Красный квадрат
+    screen.blit(player,(100,500))
 
     pygame.display.flip()  # Обновляем экран
 

@@ -9,6 +9,7 @@ pygame.init()
 #Setting up FPS 
 FPS = 60
 FramePerSec = pygame.time.Clock()
+
  
 #Creating colors
 BLUE  = (0, 0, 255)
@@ -76,7 +77,7 @@ class Coin(pygame.sprite.Sprite):
 class Player(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__() 
-        self.image = pygame.image.load("lab8/racer/Player.png")
+        self.image = pygame.image.load("lab8/racer/car2.png")
         self.rect = self.image.get_rect()
         self.rect.center = (160, 520)
         

@@ -25,5 +25,5 @@ while True:
         y -= 20
 
     screen.fill((255, 255, 255))
-    pygame.draw.circle(screen, (255, 0, 0), (x, y), 25)
+    pygame.draw.circle(screen, (255, 0, 0), (x, y), 20)
     pygame.display.update()
