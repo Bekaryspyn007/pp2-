@@ -23,7 +23,7 @@ speed=200
 
 pg.init()
 screen=pg.display.set_mode((cell_s*20,cell_s*20))
-pg.display.set_caption("lab10/ss/shashlyk snake")
+pg.display.set_caption("shashlyk snake")
 clock=pg.time.Clock()
 shashlyk=pg.image.load("lab10/ss/shashlyk.png").convert_alpha()
 qazy=pg.image.load("lab10/ss/qazy.png").convert_alpha()
